@@ -1,23 +1,38 @@
-## 큰제목
-> 프로젝트 설명
+## TACO WIKI
+> 개인용 wiki 겸 코드 저장소 입니다. 
 
+### Front-End
 
-### 링크
-
-* [Rigidbody 와 Collider](http://blog.naver.com/gold_metal/220466872002)
+* [Angular](https://github.com/evashork/taco/tree/master/angular)
+* [Html](https://github.com/evashork/taco/tree/master/html)
+* [Javascript](https://github.com/evashork/taco/tree/master/javascript)
+* [jQuery](https://github.com/evashork/taco/tree/master/jquery)
+* [Node](https://github.com/evashork/taco/tree/master/node)
 
 ---
 
-### 팁
-* 첫번째 팁
-* 두번째 팁
+### Program
+
+* [Java](https://github.com/evashork/taco/tree/master/java)
+* [C#](https://github.com/evashork/taco/tree/master/c#)
+
+---
+
+### DataBase
+
+* [sql](https://github.com/evashork/taco/tree/master/sql)
 
 
-### 식별자 - 네이밍
-> 식별자는 클래스명, 메서드명, 변수명과 같이 서로를 구별하는 이름을 의미한다.
+--- 
 
-* 식별자란 프로그래밍을 하는 데 필요한 구성요소를 구별하는 이름
+### Etc
 
-```
-코드
-```
+* [MAC](https://github.com/evashork/taco/tree/master/mac)
+* [Linux](https://github.com/evashork/taco/tree/master/linux)
+* [SublimeText](https://github.com/evashork/taco/tree/master/sublimetext)
+* [Atom](https://github.com/evashork/taco/tree/master/atom)
+* [Chrome](https://github.com/evashork/taco/tree/master/chrome)
+* [MarkDown](https://github.com/evashork/taco/tree/master/markdown)
+
+
+
