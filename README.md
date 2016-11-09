@@ -3,36 +3,36 @@
 
 ### Front-End
 
-* [Angular](https://github.com/evashork/taco/tree/master/angular)
-* [Html](https://github.com/evashork/taco/tree/master/html)
-* [Javascript](https://github.com/evashork/taco/tree/master/javascript)
-* [jQuery](https://github.com/evashork/taco/tree/master/jquery)
-* [Node](https://github.com/evashork/taco/tree/master/node)
+* [Angular](https://github.com/evashork/taco/tree/master/frontend/angular)
+* [Html](https://github.com/evashork/taco/tree/master/frontend/html)
+* [Javascript](https://github.com/evashork/taco/tree/master/frontend/javascript)
+* [jQuery](https://github.com/evashork/taco/tree/master/frontend/jquery)
+* [Node](https://github.com/evashork/taco/tree/master/frontend/node)
 
 ---
 
 ### Program
 
-* [Java](https://github.com/evashork/taco/tree/master/java)
-* [C#](https://github.com/evashork/taco/tree/master/c#)
+* [Java](https://github.com/evashork/taco/tree/master/program/java)
+* [C#](https://github.com/evashork/taco/tree/master/program/c#)
 
 ---
 
 ### DataBase
 
-* [sql](https://github.com/evashork/taco/tree/master/sql)
+* [sql](https://github.com/evashork/taco/tree/master/database/sql)
 
 
 --- 
 
 ### Etc
 
-* [MAC](https://github.com/evashork/taco/tree/master/mac)
-* [Linux](https://github.com/evashork/taco/tree/master/linux)
-* [SublimeText](https://github.com/evashork/taco/tree/master/sublimetext)
-* [Atom](https://github.com/evashork/taco/tree/master/atom)
-* [Chrome](https://github.com/evashork/taco/tree/master/chrome)
-* [MarkDown](https://github.com/evashork/taco/tree/master/markdown)
+* [MAC](https://github.com/evashork/taco/tree/master/etc/mac)
+* [Linux](https://github.com/evashork/taco/tree/master/etc/linux)
+* [SublimeText](https://github.com/evashork/taco/tree/master/etc/sublimetext)
+* [Atom](https://github.com/evashork/taco/tree/master/etc/atom)
+* [Chrome](https://github.com/evashork/taco/tree/master/etc/chrome)
+* [MarkDown](https://github.com/evashork/taco/tree/master/etc/markdown)
 
 
 
