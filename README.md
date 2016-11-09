@@ -1,29 +1,31 @@
 ## TACO WIKI
 > 개인용 wiki 겸 코드 저장소 입니다. 
 
+---
+
 ### Front-End
 
-* [Angular](https://github.com/evashork/taco/tree/master/frontend/angular)
 * [Html](https://github.com/evashork/taco/tree/master/frontend/html)
 * [Javascript](https://github.com/evashork/taco/tree/master/frontend/javascript)
 * [jQuery](https://github.com/evashork/taco/tree/master/frontend/jquery)
 * [Node](https://github.com/evashork/taco/tree/master/frontend/node)
+* [Angular](https://github.com/evashork/taco/tree/master/frontend/angular)
 
----
+
 
 ### Program
 
 * [Java](https://github.com/evashork/taco/tree/master/program/java)
 * [C#](https://github.com/evashork/taco/tree/master/program/C%23)
 
----
+
 
 ### DataBase
 
 * [sql](https://github.com/evashork/taco/tree/master/database/sql)
 
 
---- 
+
 
 ### Etc
 
