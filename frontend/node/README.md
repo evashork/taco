@@ -1,16 +1,16 @@
-## 큰제목
-> 프로젝트 설명
+## NODE.js wiki
+> nodejs와 관련된 개인 위키 및 북마크 및 코드 저장소 입니다. 
 
 
-### 링크
+#### 바로가기
 
-* [Rigidbody 와 Collider](http://blog.naver.com/gold_metal/220466872002)
+* [Angular]()
 
----
+### LINK
 
-### 팁
-* 첫번째 팁
-* 두번째 팁
+> 강의모음
+* [A MEAN Blog](http://www.a-mean-blog.com/ko/about) - MEAN Stack 강의
+
 
 
 ### 식별자 - 네이밍

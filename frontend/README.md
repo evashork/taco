@@ -12,13 +12,15 @@
 
 ### LINK
 
-#### 커뮤니티
+> 커뮤니티
+* [프론트엔드개발그룹](https://www.facebook.com/groups/webfrontend/)
+* [생활코딩](https://www.facebook.com/groups/codingeverybody/)
 * [감성프로그래밍](http://programmingsummaries.tistory.com/)
 * [SMASHINGMAGAZINE](https://www.smashingmagazine.com/)
-* [ABCD](http://abcds.kr/) - 강의 및 세미나 소개 
+* [ABCD](http://abcds.kr/) - 프론트엔드 및 최신 기술 소개  
 
 
-#### 강의
+> 강의
 * [helloworld](http://tryhelloworld.co.kr/courses) - swift, 자바, 파이썬, 스칼라, Go, 자바스크립트, Unity C#, 장고
 * [codecademy](https://www.codecademy.com/) - AngularJS,ReactJS,SQL,APIs
 * [생활코딩](https://opentutorials.org/course/1) 
@@ -27,15 +29,14 @@
 * [인프런](https://www.inflearn.com/) - 모바일앱, 프론트엔드, 프로그래밍,데이타베이스, 디자인, 유니티, 기타
 * [웹학교](https://www.youtube.com/channel/UCjTQHbtYgSVCwU-sfVukZpw) - 유투브채널 프론트엔드
 
-
-#### 코드 미리보기
+> 코드 미리보기
 * [ideone](http://ideone.com/) - 온라인 웹컴파일러 C,C#,C++,JAVA,PHP,Python
 * [CODEPEN](http://codepen.io/) CSS3 
 * [jsfiddle](https://jsfiddle.net/)
 * [js Bin](http://jsbin.com/) 
 
 
-#### API
+> API
 * [DevDocs](http://devdocs.io/) - API모음 - angular, bootstrap, DOM, D3, Git
 * [OverAPI](http://overapi.com/) - API모음 - jQuery, php, node, js, css, mysql, express
 
