@@ -1,16 +1,12 @@
-## 큰제목
-> 프로젝트 설명
+## javascript wiki
+> javascriptd와 관련된 개인 위키 및 북마크 및 코드 저장소 입니다. 
 
 
-### 링크
+### LINK
 
-* [Rigidbody 와 Collider](http://blog.naver.com/gold_metal/220466872002)
+> 플러그인
 
----
-
-### 팁
-* 첫번째 팁
-* 두번째 팁
+* [2016년도TOP50자바스크립트플러그인](https://speckyboy.com/top-50-javascript-2016/)
 
 
 ### 식별자 - 네이밍
@@ -21,3 +17,4 @@
 ```
 코드
 ```
+

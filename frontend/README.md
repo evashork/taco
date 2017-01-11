@@ -29,6 +29,7 @@
 * [웹Frameworks](http://webframeworks.kr/getstarted/) - 각종 웹프레임워크 사용법 안내
 * [인프런](https://www.inflearn.com/) - 모바일앱, 프론트엔드, 프로그래밍,데이타베이스, 디자인, 유니티, 기타
 * [웹학교](https://www.youtube.com/channel/UCjTQHbtYgSVCwU-sfVukZpw) - 유투브채널 프론트엔드
+* [그림으로배우는자바스크립트](https://brunch.co.kr/@brunch92ny) - 자바스크립트 유투브 강의
 
 > 코드 미리보기
 

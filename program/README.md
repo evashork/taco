@@ -1,17 +1,12 @@
-## 큰제목
-> 프로젝트 설명
+## 프로그래밍 wiki
+> 프로그래밍과 관련된 개인 위키 및 북마크 및 코드 저장소 입니다. 
 
 
-### 링크
+### LINK
 
-* [Rigidbody 와 Collider](http://blog.naver.com/gold_metal/220466872002)
+> iOS
 
----
-
-### 팁
-* 첫번째 팁
-* 두번째 팁
-
+* [Swift개발문서](http://swift.leantra.kr/) - apple swift 공식문서를 한글화
 
 ### 식별자 - 네이밍
 > 식별자는 클래스명, 메서드명, 변수명과 같이 서로를 구별하는 이름을 의미한다.
