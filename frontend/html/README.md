@@ -12,6 +12,8 @@
 
 * [삼성전자](http://www.samsung.com/sec/) - 웹접근성을 잘 지킨 사이트 라고 함
 
+> SVG
+* [Building Better Interfaces with SVG](http://slides.com/sarasoueidan/building-better-interfaces-with-svg#/)
 
 ### 식별자 - 네이밍
 > 식별자는 클래스명, 메서드명, 변수명과 같이 서로를 구별하는 이름을 의미한다.
