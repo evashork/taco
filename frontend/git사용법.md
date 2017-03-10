@@ -8,9 +8,9 @@
 mkdir taco							# 폴더생성
 cd taco								# 폴더이동
 git init							# git 설치
-git remote add origin <저장소URL>	   # git 원격정상소 추가
+git remote add origin <저장소URL>	  # git 원격저장소 추가
 git status							# 상태확인
-git add.							# 변경사항 추가
+git add.							  # 변경사항 추가
 git commit -m "변경메세지"			  # 변경사항 커밋
 git push origin master				# 원격저장소 동기화
 ```
@@ -36,8 +36,8 @@ git status
 ### 원격저장소
 
 ```
-git remote add origin <저장소URL>		// 저장소 추가하기
-git clone <저장소URL>					// 저장소 복제하기
+git remote add origin <저장소URL>		# 저장소 추가하기
+git clone <저장소URL>					# 저장소 복제하기
 ```
 
 
@@ -46,7 +46,7 @@ git clone <저장소URL>					// 저장소 복제하기
 
 ```
 git add 파일이름
-git add .			// 변경사항 모두 추가하기
+git add .			# 변경사항 모두 추가하기
 ```
 
 
