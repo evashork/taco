@@ -12,7 +12,7 @@ git remote add origin <저장소URL>	   # git 원격정상소 추가
 git status							# 상태확인
 git add.							# 변경사항 추가
 git commit -m "변경메세지"			  # 변경사항 커밋
-git push oring master				# 원격저장소 동기화
+git push origin master				# 원격저장소 동기화
 ```
 
 
@@ -65,4 +65,22 @@ git commit -m "전체 변경사항 커밋하기" -a
 ```
 git push origin master
 ```
+
+
+
+### Branch
+
+```
+git check out -b beta				# 새브런치 만들고 체크아웃
+git branch							# 브런치 상태 확인
+git add .							# 변경사항 추가
+git commit -m "beta 브런치테스트"		 # 변경사항 커밋
+git push -u origin beta				# 브런치 원격저장소 동기화
+git check out master				# 마스터로 변경
+git branch							# 브런치 상태 확인
+git merge beta						# 브런치 합치기
+git push							# 원격저장소 동기화
+```
+
+
 
