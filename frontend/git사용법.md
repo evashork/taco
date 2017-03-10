@@ -19,7 +19,7 @@ git push oring master				# 원격저장소 동기화
 
 ### git설치
 
-```git iniy
+```
 git init
 ```
 
@@ -44,7 +44,7 @@ git clone <저장소URL>					// 저장소 복제하기
 
 ### 변경사항 추가하기
 
-```git add
+```
 git add 파일이름
 git add .			// 변경사항 모두 추가하기
 ```
