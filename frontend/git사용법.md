@@ -11,7 +11,7 @@ git init							# git 설치
 git remote add origin <저장소URL>	 # git 원격저장소 추가
 git status							# 상태확인
 git add.							# 변경사항 추가
-git commit -m "변경메세지"			   # 변경사항 커밋
+git commit -m "변경메세지"			    # 변경사항 커밋
 git push origin master				# 원격저장소 동기화
 ```
 
