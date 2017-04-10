@@ -12,7 +12,7 @@ javascript 참고 및 코드 저장소
 
 ## Debug
 
-```javascript
+```
 console.log('hello world')
 ```
 
@@ -22,7 +22,7 @@ console.log('hello world')
 
 ### BASIC
 
-```javascript
+```
 // 변수
 var age = 30;
 
@@ -67,7 +67,7 @@ console.log(obj.x + obj.y);
 
 ## [연산자](#연산자)
 
-```javascript
+```
 var x = 5;
 var y = 2;
 var z;
@@ -85,7 +85,7 @@ z = --x;	// 5 선감소후대입
 
 ### 대입연산자
 
-```javascript
+```
 var x;
 
 x = 10; // 10
@@ -101,7 +101,7 @@ txt1 += "world";		// hello world
 
 ### 비교연산자
 
-```javascript
+```
 var x = 5;
 
 x == 5 		// true
@@ -118,14 +118,14 @@ x <= 0		// false
 
 피연산자1의 조건식이 참이면 피연사잔의 2의 결과값을 갖고 거짓이면 피연산자3의 결과값을 갖는다.
 
-```javascript
+```
 var now = new Date();
 var greeting = "Good" + ((now.getHours() > 17) ? " evening." : " day.");
 ```
 
 ### 논리연산자
 
-```javascript
+```
 // && AND
 var a1 = true && true;		// return true
 var a2 = true && false; 	// return false
@@ -145,7 +145,7 @@ var n2 = !false;			// return true;
 
 ### if문
 
-```javascript
+```
 var hour = 20;
 var greeting;
 
@@ -172,7 +172,7 @@ switch문의 경우, swith변수의 값과 일치되는 case 순으로 실행되
 
 break는 switch 구문에서 탈출하는 역활을 수행한다. breack가 없다면 실행 순서 다음 case로 이동한다.
 
-```javascript
+```
 var color = "red";
 
 switch(color){
@@ -193,7 +193,7 @@ switch(color){
 
 가장 일반적인 반복문이다. 일정 횟수만큼 반복 실행하여야 할 때 사용한다.
 
-```javascript
+```
 for (var i = 0; i < 3; i++){
   console.log(i);
 }
@@ -203,7 +203,7 @@ for (var i = 0; i < 3; i++){
 
 반복 횟수를 정확히 알지 못할 때 사용한다.
 
-```javascript
+```
 var i = 0;
 while (i < 3){
   console.log(i);
@@ -215,7 +215,7 @@ while (i < 3){
 
 while문과 매우 유사하나 코드블록은 최소 1회이상 실행된다.
 
-```javascript
+```
 var i = 0;
 do {
   console.log(i);
@@ -227,7 +227,7 @@ do {
 
 반복문을 탈출할 때 사용하는 키워드이다. break문을 감싸는 반복문 하나를 탈출한다.
 
-```javascript
+```
 var i = 0;
 while(1){
   if( i > 3) break;
@@ -240,14 +240,38 @@ while(1){
 
 continue문 이후의 구문은 실행 생략하고 반복문의 조건검사 위치로 이동한다.
 
-```javascript
+```
 for (var i =0; i < 5; i++){
   if (i % 2 == 0) continue;
   console.log("The number is " + i);
 }
 ```
 
+#### 파라미터
 
+##### 단일 파라미터
+```
+function calculateArea(width,height){
+	var area = width * height;
+  return area;
+}
+
+var wallOne = calculateArea(3,5);
+var wallTwo = calculateArea(8,5);
+```
+
+##### 복수 파라미터
+```
+function getSize(width, height, depth) {
+	var area = width * height;							// 면적
+  var volume = width * height * depth;		// 부피
+  var sizes = [area, volume];							// [면적,부피]
+  return sizes;
+}
+
+var areaOne = getSize(3,2,3)[0];					// size[0] 면적
+var areaTwo = getSize(3,2,3)[1];					// size[1] 부피
+```
 
 
 

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+	var hour = prompt("시간을 입력하세요", "1~24");
+	var min = prompt("분을 입력하세요","0~59");
+	var sec = prompt("초를 입력하세요","0~59");
+	var nowDate = new Date();
+	var thenDate = new Date();
+	var mouseTarget;
+
+	var hourInt = Number(hour);
+	var minInt = Number(min);
+	var secInt = Number(sec);
+	thenDate.setHours(hourInt);
+	thenDate.setMinutes(minInt);
+	thenDate.setSeconds(secInt);
+	thenDate.setMilliseconds(0);
+
+	var x = setInterval (checkTime, 10);
+
+	function checkTime() {
+	  nowDate.setTime(nowDate.getTime() + 10);
+	  var dateDate = new Date();
+	  if(thenDate.getTime() <= nowDate.getTime()){
+	    alert("hi");
+	    console.log("real: "+dateDate);	   
+	    console.log("server: "+nowDate);
+	   console.log("script: "+thenDate);	
+	   console.log("real: "+dateDate.getTime());
+	   console.log("server: "+nowDate.getTime());
+	   console.log("script: "+thenDate.getTime());	
+	   clearInterval(x);
+	  }
+	}
+	
+	</script>
+</head>
+<body>
+	<a href="http://mrcoles.com/bookmarklet/">온라인 북마클릿 생성사이트</a>
+	<form id="hi">
+		<button type="submit">button</button>
+	</form>
+</body>
+</html>

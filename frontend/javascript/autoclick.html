@@ -27,6 +27,7 @@
 	var sec = prompt("초를 입력하세요","0~59");
 	var nowDate;
 	var thenDate = new Date();
+	var dateDate = new Date();
 	var mouseTarget;
 
 	var hourInt = Number(hour);
@@ -37,19 +38,16 @@
 	thenDate.setSeconds(secInt);
 	thenDate.setMilliseconds(0);
 
-	var x = setInterval (checkTime, 0);
+	var x = setInterval (checkTime, 100);
 
 	function checkTime() {
-	  st = srvTime();
-	  nowDate = new Date(st);
-	  if(thenDate.getTime() <= nowDate.getTime()){
-	    mouseTarget.click();
-	   // console.log("server: "+nowDate);
-	   // console.log("script: "+thenDate);	
-	   // console.log("server: "+nowDate.getTime());
-	   // console.log("script: "+thenDate.getTime());	
-	   // clearInterval(x);
-	  }
+		st = srvTime();
+		nowDate = new Date(st);
+	  	
+		if(thenDate.getTime() <= nowDate.getTime()){
+			mouseTarget.click();
+		    clearInterval(x);
+		}
 	}
 	document.onmouseover = function (e){
 	  var event = e || window.event;
