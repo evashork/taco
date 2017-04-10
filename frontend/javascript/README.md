@@ -10,6 +10,8 @@ javascript 참고 및 코드 저장소
 
 - [함수](#함수)
 
+- [객체](#객체)
+
 ## Debug
 
 ```
@@ -300,6 +302,79 @@ var area = (function(){
   return width * height;
 }());
 ```
+
+## [객체](#객체)
+
+객체란 변수와 함수를 그룹화한 것을 말한다. 객체 내에서 변수는 속성, 함수는 메서드라고 부른다.
+
+### 객체 생성
+
+```
+var hotel = {
+  name : 'Quay',							// 속성 = 변수
+  rooms : 40,								// 속성 = 변수	
+  booked : 25,								// 속성 = 변수
+  gym : true,								// 속성 = 변수
+  roomTypes : ['트윈','더블','스위트'],			// 속성 = 변수
+  checkAvailability : function(){			// 메서드 = 함수
+  	return this.rooms - this.booked;
+  }
+}
+
+// 빈 객체 생성
+var hotel = {};								// {} 객체, [] 배열
+hotel.name = 'Quey';
+hotel.rooms = 40;
+hotel.booked = 25;
+hotel.checkAvailability = function(){
+	return this.rooms - this.booked;
+}
+
+```
+
+### 객체 접근하기
+
+```
+	var hotelName = hotel.name;
+	var hotelName = hotel['name'];
+	var roomsFree = hotel.checkAvailability();
+```
+
+### 객체 삭제하기
+```
+	delete hotel.name;		// 속성 제거하기
+	hotel.name = '';		// 속성 값 비우기
+```
+
+### 생성자 표기법
+
+```
+	var hotel = new Object();
+
+```
+### 생성자 표기법을 이용한 여러 객체 생성하기
+
+객체 생성자는 함수를 마치 객체 생성을 위한 템플릿처럼 사용한다.
+
+```
+
+	function Hotel(name, rooms, booked){
+	  this.name = name;
+	  this.rooms = rooms;
+	  this.booked = booked;
+	  
+	  this.checkRoom = function(){
+	  	return this.rooms - this.booked;
+	  }
+	}
+
+	var tacoHotel = new Hotel('Taco',40,20);
+	var hiyoHotel = new Hotel('Hiyi',50,11);
+
+	var detail = tacoHotel.name + ' 남은 방: ';
+		detail += tacoHotel.checkRoom();
+```
+
 
 
 
