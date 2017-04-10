@@ -8,7 +8,7 @@ javascript 참고 및 코드 저장소
 
 - [제어문](#제어문)
 
-  ​
+- [함수](#함수)
 
 ## Debug
 
@@ -247,9 +247,9 @@ for (var i =0; i < 5; i++){
 }
 ```
 
-#### 파라미터
+## [함수](#함수)
 
-##### 단일 파라미터
+### 단일 파라미터
 ```
 function calculateArea(width,height){
 	var area = width * height;
@@ -260,7 +260,7 @@ var wallOne = calculateArea(3,5);
 var wallTwo = calculateArea(8,5);
 ```
 
-##### 복수 파라미터
+### 복수 파라미터
 ```
 function getSize(width, height, depth) {
 	var area = width * height;							// 면적
@@ -271,6 +271,34 @@ function getSize(width, height, depth) {
 
 var areaOne = getSize(3,2,3)[0];					// size[0] 면적
 var areaTwo = getSize(3,2,3)[1];					// size[1] 부피
+```
+
+### 익명 함수
+
+자바스크립트 해석기가 표현식을 필요로 하는 곳에 함수를 전달하면 이 함수는 표현식으로 처리되며,
+이런 함수를 함수표현식(function expression)이라고 한다. 함수 표현식을 사용할 때는 
+대부분 함수 이름을 생략하며, 이처럼 이름이 없는 함수를 익명함수 하고 한다.
+
+```
+var area = function(width,height){
+	return width * height;
+}
+
+var size = area(3,4);
+```
+
+###	즉시호출함수표현식
+
+자바스크립트 해석기가 함수정의를 만났을 때 단 한번 실행된다.
+익명함수와 즉시호출 함수는 함수를 반복적으로 호출하는 경우가 아니라 작업 내에서 단 한번만 실행 될
+필요가 있을 때 사용된다. 
+
+```
+var area = (function(){
+	var width = 3;
+  var height = 2;
+  return width * height;
+}());
 ```
 
 
