@@ -49,7 +49,7 @@ console.log(obj.x + obj.y);
 
 ### HTML
 
-```html
+```
 <!DOCTYPE html>
 <html lang="ko">
 <body>

@@ -22,7 +22,7 @@
 - [window.print()](#print)
 
 
-## [innerHeight](#innerHeight)
+# [innerHeight](#innerHeight)
 
 창의 높이 픽셀 (브라우저 창 테두리 및 사용자 인터페이스 부분은 제외)
 
