@@ -9,7 +9,7 @@
 - [window.pageXOffset](#pageXOffset)
 - [window.pageYOffset](#pageYOffset)
 - [window.screenX](#screenX)
-- [window.screenY](#screenY)
+- [screenY](#screenY)
 - [window.location](#location)
 - [window.document](#document)
 - [window.history](#history)
