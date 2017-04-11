@@ -23,7 +23,7 @@
 
 
 
-# open
+## open
 
 ```
 var windowURL = window.location;
