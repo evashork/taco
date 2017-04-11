@@ -4,7 +4,7 @@
 
  window 객체의 주요 속성과 메서드 
 
-- [window.innerHeight](#innerHeight)
+- [innerHeight](#innerHeight)
 - [window.innerWidth](#innerWidth)
 - [window.pageXOffset](#pageXOffset)
 - [window.pageYOffset](#pageYOffset)
@@ -22,7 +22,7 @@
 - [window.print()](#print)
 
 
-# [innerHeight](#innerHeight)
+## [innerHeight](#innerHeight)
 
 창의 높이 픽셀 (브라우저 창 테두리 및 사용자 인터페이스 부분은 제외)
 
@@ -53,6 +53,20 @@ var windowPageXOffset = window.pageXOffset;
 
 ```
 var windowPageYOffset = window.pageYOffset;
+```
+
+## [screenX](#screenX)
+
+화면의 좌측상단으로부터 현재 마우스 포인터의 X 좌표
+```
+var windowScreenX = window.screenX;
+```
+
+## [screenY](#screenY)
+
+화면의 좌측상단으로부터 현재 마우스 포인터의 X 좌표
+```
+var windowScreenY = window.screenY;
 ```
 
 
