@@ -296,6 +296,8 @@ var size = area(3,4);
 필요가 있을 때 사용된다. 
 
 ```
+(function(){ console.log('hi'); }());
+
 var area = (function(){
 	var width = 3;
   var height = 2;
