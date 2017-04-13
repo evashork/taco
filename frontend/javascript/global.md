@@ -2,7 +2,7 @@
 
 
 
- ### [string](#stirng)
+ ### [string](#stirng-1)
 
 - [length](#length) - 문자의 개수를 리턴한다.
 - [toUpperCase()](#toUpperCase) - 문자열의 문자를 모두 대문자로 변경한다.
@@ -18,6 +18,6 @@
 
 
 
-# string
+### string
 
-## length 
+#### length 
