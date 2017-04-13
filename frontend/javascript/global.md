@@ -2,7 +2,7 @@
 
 
 
- ## [string](#stirng-1)
+ ## [string](#stirng객체)
 
 - [length](#length) - 문자의 개수를 리턴한다.
 - [toUpperCase()](#toUpperCase) - 문자열의 문자를 모두 대문자로 변경한다.
@@ -15,26 +15,20 @@
 - [trim()](#trim) - 문자열의 양 끝에 있는 공백 문자를 제거한다.
 - [replace()](#replace) - 첫번째 인자를 찾아서 두번 째 인자로 바꾼다. 기본적으로 이 동작은 한번만 실행된다.
 
-## string
+## string객체
 
 ```
 	var say = "Home sweet home "; 
 	
 	say.length;				// 16
-	say.toUpperCase(); 		// 'HOME SWEET HOME'
-	say.toLowerCase(); 		// 'home sweet home'
+	say.toUpperCase();		// 'HOME SWEET HOME'
+	say.toLowerCase();		// 'home sweet home'
 	say.charAt(11);			// 'h'
 	say.indexOf('ee');		// 7
 	say.lastIndexOf('e');	// 14
 	say.substring(8,14);	// 'et hom'
 	say.split(' ');			// ['home','sweet','home','']
 	say.trim();				// 'Home sweet home'
-	say.replace('me','w')	// 'How sweet home '
+	say.replace('me','w');	// 'How sweet home '
 	
-```
-
-### toUperCase
-```
-	var say = ""
-
 ```
