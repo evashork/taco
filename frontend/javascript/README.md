@@ -12,6 +12,12 @@ javascript 참고 및 코드 저장소
 
 - [객체](#객체)
 
+- [브라우저객체](https://github.com/evashork/taco/blob/master/frontend/javascript/window.md) - 브라우저 모델 객체
+
+- [문서객체](https://github.com/evashork/taco/blob/master/frontend/javascript/document.md) - 문서 모델 객체
+
+- [전역객체](https://github.com/evashork/taco/blob/master/frontend/javascript/global.md) - 문자열, 수학, 날짜 등 기본 내장 객체
+
 ## Debug
 
 ```
