@@ -2,8 +2,8 @@
 > nodejs와 관련된 개인 위키 및 북마크 및 코드 저장소 입니다. 
 
 * [NPM](#npm)
-* [NODE-기본](#Node-코드)
-* [NODE-객체](#Node-객체)
+* [NODE-기본](#node-코드)
+* [NODE-객체](#node-객체)
 
 
 #### 바로가기
@@ -107,44 +107,12 @@ dependencies 의존성을 package.json에 추가 한다. 프로젝트에 필요�
 ```
 npm install underscore --save
 ```
-
-## express
-#### install
+### npm 모음
 ```
-npm install express --save
-```
-
-## supervisor
-#### install
-```
-npm install supervisor -g
-```
-#### 실행하기
-```
-supervisor app               
-```
-
-## jade
-#### install
-```
-npm install jade --save
-```
-#### jade 설정
-```
-app.set('view engine', 'jade');
-app.set('views','./views');             // jade 파일 폴더 설정
-app.locals.pretty = true;
-```
-
-## body-parser
-#### install
-```
-npm install body-parser --save
-```
-
-## multer
-파일 업로드 
-#### install
-```
-npm install multer --save
+	npm install express
+	npm install supervisor -g
+	npm install jade --save
+	npm install body-parser --save
+	npm install multer --save
+	npm install underscore --save
 ```
