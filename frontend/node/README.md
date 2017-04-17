@@ -2,9 +2,10 @@
 > nodejs와 관련된 개인 위키 및 북마크 및 코드 저장소 입니다. 
 
 * [NPM](#npm)
-* [NODE-기본](#node-기본)
-* [NODE-객체](#node-객체)
-* [EXPERSS](https://github.com/evashork/taco/blob/master/frontend/node/express.md)
+* [NODE-기본](#node-기본) - node 기본 사용법
+* [NODE-객체](#node-객체) - node 기본 객체
+* [FileSystem](#filesystem) - 파일처리를 담당하는 node 기본 모듈  
+* [EXPERSS](https://github.com/evashork/taco/blob/master/frontend/node/express.md) - 외부 모듈
 
 #### 바로가기
 
@@ -119,3 +120,83 @@ npm install underscore --save
 	npm install underscore --save
 	npm install socket.io --save
 ```
+
+## [FileSystem](#)
+
+
+#### 모듈 선언
+```
+	var fs = require('fs');
+```
+
+#### 파일 읽기
+```
+	var fs = require('fs');
+
+	/* 동기적 처리 */
+	var text = fs.readFileSync('textfile.txt','utf8');
+	console.log(text);
+
+	/* 예외처리 */
+	try {
+			var text = fs.readFileSync('textfile.txt','utf8');
+			console.log(text);
+		} catch (e) {
+			console.log(e);
+	}
+	
+	/* 비동기적 처리 콜백 */
+	fs.readFile('textfile.txt','utf8', function(err,data){
+		console.log(data);
+	});
+
+	/* 예외처리 */
+	fs.readFile('textfile.txt','utf8', function(err,data){
+		if(err) {
+			console.log(err);
+		} else {
+			console.log(data);
+		}
+		
+	});
+
+	
+```
+
+#### 파일 생성
+```
+	var fs = require('fs');
+
+	var data = 'Hello world';
+
+	/* 동기적 처리 */
+	fs.writeFileSync('textfile3.txt',data,'utf8');
+	console.log('WRITE FILE SYNC COMPLETE');
+
+	/* 예외처리 */
+	try {
+			fs.writeFileSync('textfile3.txt',data,'utf8');
+			console.log(text);
+		} catch (e) {
+			console.log(e);
+	}
+
+	/* 비동기적 처리 콜백 */
+	fs.writeFile('textfile2.txt', data, 'utf8', function(err){
+		console.log('WRITE FILE ASYNC COMPLETE');
+	});
+
+	/* 예외처리 */
+	fs.writeFile('textfile2.txt', data, 'utf8', function(err){
+		if(err) {
+			console.log(err);
+		} else {
+			console.log(data);
+		}
+		
+	});
+```
+
+
+
+
