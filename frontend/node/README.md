@@ -199,7 +199,67 @@ npm install underscore --save
 ```
 
 ## [Event](#)
+> 기본적인 사용법
+```
+	var custom = new process.EventEmitter();	// 이벤트 객체를 생성
 
+	custom.on('tick',function(){				// 이벤트를 연결
+		console.log('이벤트를 실행합니다.');
+	});
+
+	custom.emit('tick');						// 이벤트 실행
+```
+> 모듈화
+#### rint.js
+```
+	exports.timer = new process.EventEmitter();		// 이벤트 객체 생성
+
+	setIterval(function(){							// 이벤트 강제 발생 emit()
+		exports.timer.emit('tick');
+	},1000);
+```
+#### app.js
+```
+	var rint = require('./rint');
+
+	rint.timer.on('tick',function(){
+		console.log('이벤트를 실행합니다.!!')
+	});
+```
+
+### on
+on(이벤트네임,이벤트헨들러)
+```
+	process.on('exit',function(){
+
+	});
+```
+
+### setMaxListeners
+이벤트는 기본적으로 10개까지 가능하지만 확장하려면 setMaxListners 이용한다.
+```
+	process.setMaxListeners(15);
+```
+
+### 이벤트제거
+```
+	process.removeListener('exit',function(){});			// 특정 이벤트의 이벤트 핸들러를 제거
+	process.removeAllListener(['exit']);					// 모든 이벤트 헨들러를 제거
+```
+
+### once
+이벤트를 한번만 연결하고 싶은 경우 사용
+```
+	process.once('exit',function(){
+
+	});
+```
+
+### 이벤트강제생성
+```
+	process.emit('exit');		// exit 이벤트를 강제 발생
+	process.exit();				// 이벤트를 강제 종료
+```
 
 
 
