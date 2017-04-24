@@ -46,42 +46,42 @@ npm -v
 
 ### 전역변수
 ```
-	console.log('filename:',__filename);	// 현재 실행 중인 코드의 파일 경로를 나타낸다.
-	console.log('dirname:',__dirname);		// 현재 실행 중인 코드의 폴더 경로를 나타낸다.
+console.log('filename:',__filename);	// 현재 실행 중인 코드의 파일 경로를 나타낸다.
+console.log('dirname:',__dirname);		// 현재 실행 중인 코드의 폴더 경로를 나타낸다.
 ```
 ### console 객체
 ```
-	console.log();							// 출력
-	console.time(label);					// 시간 측정을 시작
-	console.timeEnd(label);					// 시간 측정을 종료
+console.log();							// 출력
+console.time(label);					// 시간 측정을 시작
+console.timeEnd(label);					// 시간 측정을 종료
 ```
 ### process 객체
 ```
-	process.env;							// 컴퓨터 환경과 관련된 정보
-	process.version;						// Node 버전
-	process.versions;						// Node와 종속된 프로그램 버전
-	process.platform;						// 플랫폼을 나타낸다.
+process.env;							// 컴퓨터 환경과 관련된 정보
+process.version;						// Node 버전
+process.versions;						// Node와 종속된 프로그램 버전
+process.platform;						// 플랫폼을 나타낸다.
 
-	/* process 메서드 */
-	process.exit();							// 프로그램을 종료
-	process.memoryUsage();					// 메모리 사용 정보를 리턴
-	process.uptime();						// 현재 프로그램이 실행된 시간
+/* process 메서드 */
+process.exit();							// 프로그램을 종료
+process.memoryUsage();					// 메모리 사용 정보를 리턴
+process.uptime();						// 현재 프로그램이 실행된 시간
 ```
 ### exports 객체
 모듈을 생성할 때는 exports 객체를 사용한다.
 
 #### module.js
 ```
-	exports.abs = function(number) {
-		number++;
-		return number;
-	}
+exports.abs = function(number) {
+	number++;
+	return number;
+}
 ```
 #### main.js
 ```
-	var module = require('./module.js');
+var module = require('./module.js');
 
-	module.abs(33);
+module.abs(33);
 ```
 
 
@@ -114,13 +114,13 @@ npm install underscore --save
 ```
 ### npm 모음
 ```
-	npm install express
-	npm install supervisor -g
-	npm install jade --save
-	npm install body-parser --save
-	npm install multer --save
-	npm install underscore --save
-	npm install socket.io --save
+npm install express
+npm install supervisor -g
+npm install jade --save
+npm install body-parser --save
+npm install multer --save
+npm install underscore --save
+npm install socket.io --save
 ```
 
 ## [FileSystem](#)
@@ -128,192 +128,197 @@ npm install underscore --save
 
 #### 모듈 선언
 ```
-	var fs = require('fs');
+var fs = require('fs');
 ```
 
 #### 파일 읽기
 ```
-	var fs = require('fs');
+var fs = require('fs');
 
-	/* 동기적 처리 */
-	var text = fs.readFileSync('textfile.txt','utf8');
-	console.log(text);
+/* 동기적 처리 */
+var text = fs.readFileSync('textfile.txt','utf8');
+console.log(text);
 
-	/* 예외처리 */
-	try {
-			var text = fs.readFileSync('textfile.txt','utf8');
-			console.log(text);
-		} catch (e) {
-			console.log(e);
+/* 예외처리 */
+try {
+		var text = fs.readFileSync('textfile.txt','utf8');
+		console.log(text);
+	} catch (e) {
+		console.log(e);
+}
+
+/* 비동기적 처리 콜백 */
+fs.readFile('textfile.txt','utf8', function(err,data){
+	console.log(data);
+});
+
+/* 예외처리 */
+fs.readFile('textfile.txt','utf8', function(err,data){
+	if(err) {
+		console.log(err);
+	} else {
+		console.log(data);
 	}
 	
-	/* 비동기적 처리 콜백 */
-	fs.readFile('textfile.txt','utf8', function(err,data){
-		console.log(data);
-	});
-
-	/* 예외처리 */
-	fs.readFile('textfile.txt','utf8', function(err,data){
-		if(err) {
-			console.log(err);
-		} else {
-			console.log(data);
-		}
-		
-	});
-
-	
+});	
 ```
 
 #### 파일 생성
 ```
-	var fs = require('fs');
+var fs = require('fs');
 
-	var data = 'Hello world';
+var data = 'Hello world';
 
-	/* 동기적 처리 */
-	fs.writeFileSync('textfile3.txt',data,'utf8');
-	console.log('WRITE FILE SYNC COMPLETE');
+/* 동기적 처리 */
+fs.writeFileSync('textfile3.txt',data,'utf8');
+console.log('WRITE FILE SYNC COMPLETE');
 
-	/* 예외처리 */
-	try {
-			fs.writeFileSync('textfile3.txt',data,'utf8');
-			console.log(text);
-		} catch (e) {
-			console.log(e);
+/* 예외처리 */
+try {
+		fs.writeFileSync('textfile3.txt',data,'utf8');
+		console.log(text);
+	} catch (e) {
+		console.log(e);
+}
+
+/* 비동기적 처리 콜백 */
+fs.writeFile('textfile2.txt', data, 'utf8', function(err){
+	console.log('WRITE FILE ASYNC COMPLETE');
+});
+
+/* 예외처리 */
+fs.writeFile('textfile2.txt', data, 'utf8', function(err){
+	if(err) {
+		console.log(err);
+	} else {
+		console.log(data);
 	}
-
-	/* 비동기적 처리 콜백 */
-	fs.writeFile('textfile2.txt', data, 'utf8', function(err){
-		console.log('WRITE FILE ASYNC COMPLETE');
-	});
-
-	/* 예외처리 */
-	fs.writeFile('textfile2.txt', data, 'utf8', function(err){
-		if(err) {
-			console.log(err);
-		} else {
-			console.log(data);
-		}
-		
-	});
+	
+});
 ```
 
 ## [Event](#)
 > 기본적인 사용법
 ```
-	var custom = new process.EventEmitter();	// 이벤트 객체를 생성
+var custom = new process.EventEmitter();	// 이벤트 객체를 생성
 
-	custom.on('tick',function(){				// 이벤트를 연결
-		console.log('이벤트를 실행합니다.');
-	});
+custom.on('tick',function(){				// 이벤트를 연결
+	console.log('이벤트를 실행합니다.');
+});
 
-	custom.emit('tick');						// 이벤트 실행
+custom.emit('tick');						// 이벤트 실행
 ```
 > 모듈화
 #### rint.js
 ```
-	exports.timer = new process.EventEmitter();		// 이벤트 객체 생성
+exports.timer = new process.EventEmitter();		// 이벤트 객체 생성
 
-	setIterval(function(){							// 이벤트 강제 발생 emit()
-		exports.timer.emit('tick');
-	},1000);
+setIterval(function(){							// 이벤트 강제 발생 emit()
+	exports.timer.emit('tick');
+},1000);
 ```
 #### app.js
 ```
-	var rint = require('./rint');
+var rint = require('./rint');
 
-	rint.timer.on('tick',function(){
-		console.log('이벤트를 실행합니다.!!')
-	});
+rint.timer.on('tick',function(){
+	console.log('이벤트를 실행합니다.!!')
+});
 ```
 
 ### on
 on(이벤트네임,이벤트헨들러)
 ```
-	process.on('exit',function(){
+process.on('exit',function(){
 
-	});
+});
 ```
 
 ### setMaxListeners
 이벤트는 기본적으로 10개까지 가능하지만 확장하려면 setMaxListners 이용한다.
 ```
-	process.setMaxListeners(15);
+process.setMaxListeners(15);
 ```
 
 ### 이벤트제거
 ```
-	process.removeListener('exit',function(){});			// 특정 이벤트의 이벤트 핸들러를 제거
-	process.removeAllListener(['exit']);					// 모든 이벤트 헨들러를 제거
+process.removeListener('exit',function(){});			// 특정 이벤트의 이벤트 핸들러를 제거
+process.removeAllListener(['exit']);					// 모든 이벤트 헨들러를 제거
 ```
 
 ### once
 이벤트를 한번만 연결하고 싶은 경우 사용
 ```
-	process.once('exit',function(){
+process.once('exit',function(){
 
-	});
+});
 ```
 
 ### 이벤트강제생성
 ```
-	process.emit('exit');		// exit 이벤트를 강제 발생
-	process.exit();				// 이벤트를 강제 종료
+process.emit('exit');		// exit 이벤트를 강제 발생
+process.exit();				// 이벤트를 강제 종료
 ```
 
-## [HTTP]()
+## [HTTP](#)
+
+- [server](#server)
+- [response](#response) 
+- [cookie](#cookie)
+- [request](#request)
+- [URL](#url) - 경로 설정
+- [method](#method) - get,post 요청방식 구분
 
 ### server
 > 기본 사용법
 ```
-	// 모듈 선언
-	var http = require('http');
-	// 서버 생성
-	var server = http.createServer();
-	// 서버 실행
-	server.listen(52273);
-	// 서버 종료
-	server.close();
+// 모듈 선언
+var http = require('http');
+// 서버 생성
+var server = http.createServer();
+// 서버 실행
+server.listen(52273);
+// 서버 종료
+server.close();
 ```
 ```
-	var http = require('http');
+var http = require('http');
 
-	http.createServer(function(request,response){
+http.createServer(function(request,response){
 
-	}).listen(52273, function(){
-		console.log('Server Running!!')
-	});
+}).listen(52273, function(){
+	console.log('Server Running!!')
+});
 ```
 
 #### server 이벤트
 ```
-	var http = require('http');
+var http = require('http');
 
-	var server = http.createServer();
+var server = http.createServer();
 
-	// 클라이언트가 요청시
-	server.on('request', function(){
-		console.log('request on');
-	});
-	// 클라이언트가 접속시
-	server.on('connection',function(){
-		console.log('connection on');
-	});
-	// 서버 종료시
-	server.on('close',function(){
-		console.log('close on');
-	});
+// 클라이언트가 요청시
+server.on('request', function(){
+	console.log('request on');
+});
+// 클라이언트가 접속시
+server.on('connection',function(){
+	console.log('connection on');
+});
+// 서버 종료시
+server.on('close',function(){
+	console.log('close on');
+});
 
-	server.listen(52273);
+server.listen(52273);
 ```
 
 ### response
 response 객체의 메서드를 이용하여 응답메세지를 생성할 수 있다.
 ```
-	require('http').createServer(function(request,response){
-		response.writeHead(200,{'Content-Type':'text/html'});
-		response.end('<h1>Hello World</h1>');
+require('http').createServer(function(request,response){
+	response.writeHead(200,{'Content-Type':'text/html'});
+	response.end('<h1>Hello World</h1>');
 }).listen(52273);
 ```
 #### MIME 
@@ -342,7 +347,7 @@ http.createServer(function(request,response){
 
 // 이미지
 http.createServer(function(request,response){
-	fs.readFile('HTMLPage.html',function(err,data){
+	fs.readFile('image.jpeg',function(err,data){
 		response.writeHead(200,{'Content-Type':'image/jpeg'});
 		response.end(data);
 	});
@@ -352,7 +357,7 @@ http.createServer(function(request,response){
 
 // 음악
 http.createServer(function(request,response){
-	fs.readFile('HTMLPage.html',function(err,data){
+	fs.readFile('music.mp3',function(err,data){
 		response.writeHead(200,{'Content-Type':'audio/mp3'});
 		response.end(data);
 	});
@@ -360,6 +365,99 @@ http.createServer(function(request,response){
 	console.log('Server Running!!')
 });
 ```
+### cookie
+> 쿠키 구성
+```
+Name = Value; Expires = 날짜; Domain = 도메인; Path = 경로; Secure
+```
+#### 쿠키생성
+```
+var http = require('http');
 
+http.createServer(function(res,req){
+	// 쿠키 생성
+	res.writeHead(200,{
+		'Content-Type': 'text/html',
+		'Set-Cookie:':['breakfast = toast','dinner = chicken']
+	});
+}).listen(52273, function(){
+	console.log('server on!!')
+});
+```
+#### 쿠키생성 및 출력
+```
+var http = require('http');
 
+http.createServer(function(request,response){
+	var date = new Date();
+	date.setDate(date.getDate() + 7);
+	// 쿠키 생성
+	response.writeHead(200,{
+		'Content-Type': 'text/html',
+		'Set-Cookie':['breakfast = toast;Expire = ' + date.toUTCString(),'dinner = chicken']
+	});
 
+	response.end('<h1>' + request.headers.cookie + '</h1>')
+}).listen(52273, function(){
+	console.log('server on!!')
+});
+```
+### 페이지 강제 이동
+200,302는 [HTTP status](https://ko.wikipedia.org/wiki/HTTP_%EC%83%81%ED%83%9C_%EC%BD%94%EB%93%9C) 를 나타낸다.
+- [1XX]() : 처리중
+- [2XX]() : 성공
+- [3XX]() : 리다이렉트
+- [4XX]() : 클라이언트 오류
+- [5XX]() : 서버 오류
+ 
+```
+var http = require('http');
+
+http.createServer(function(request,response){
+	// 쿠키 생성
+	response.writeHead(302,{'Location':'http://google.com'});
+	response.end();
+}).listen(52273, function(){
+	console.log('server on!!')
+});
+```
+
+## request
+
+### url
+```
+var http = require('http');
+var fs = require('fs');
+var url = require('url');
+
+http.createServer(function(request,response){
+	var pathname = url.parse(request.url).pathname;
+
+	if(pathname == '/'){
+		fs.readFile('index.html',function(error, data){
+			response.writeHead(200,{'Content-Type':'text/html'});
+			response.end(data);
+		});
+	}else if(pathname == '/OtherPage'){
+		fs.readFile('otherPage.html',function(error,data){
+			response.writeHead(200,{'Content-Type':'text/html'});
+			response.end(data);
+		});
+	}
+}).listen(52273, function(){
+	console.log('server on!!')
+});
+```
+
+#### method
+```
+http.createServer(function(request,response){
+	if(request.method == 'GET'){
+
+	} else if(request.method == 'POST'){
+		
+	}
+}).listen(52273, function(){
+	console.log('server on!!')
+});
+```
