@@ -7,6 +7,7 @@
 * [FileSystem](#filesystem) - 파일처리를 담당하는 node 기본 모듈  
 * [EXPERSS](https://github.com/evashork/taco/blob/master/frontend/node/express.md) - 외부 모듈
 * [이벤트](#event) - node 이벤트 처리 방법
+* [HTTP모듈](#http) - 가장 기본적인 웹모듈
 
 #### 바로가기
 
@@ -259,6 +260,105 @@ on(이벤트네임,이벤트헨들러)
 ```
 	process.emit('exit');		// exit 이벤트를 강제 발생
 	process.exit();				// 이벤트를 강제 종료
+```
+
+## [HTTP]()
+
+### server
+> 기본 사용법
+```
+	// 모듈 선언
+	var http = require('http');
+	// 서버 생성
+	var server = http.createServer();
+	// 서버 실행
+	server.listen(52273);
+	// 서버 종료
+	server.close();
+```
+```
+	var http = require('http');
+
+	http.createServer(function(request,response){
+
+	}).listen(52273, function(){
+		console.log('Server Running!!')
+	});
+```
+
+#### server 이벤트
+```
+	var http = require('http');
+
+	var server = http.createServer();
+
+	// 클라이언트가 요청시
+	server.on('request', function(){
+		console.log('request on');
+	});
+	// 클라이언트가 접속시
+	server.on('connection',function(){
+		console.log('connection on');
+	});
+	// 서버 종료시
+	server.on('close',function(){
+		console.log('close on');
+	});
+
+	server.listen(52273);
+```
+
+### response
+response 객체의 메서드를 이용하여 응답메세지를 생성할 수 있다.
+```
+	require('http').createServer(function(request,response){
+		response.writeHead(200,{'Content-Type':'text/html'});
+		response.end('<h1>Hello World</h1>');
+}).listen(52273);
+```
+#### MIME 
+content-Type 속성을 이용하여 다양한 데이터를 제공할 수 있다.
+ - [MIME 타입의 전체 목록](https://developer.mozilla.org/ko/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Complete_list_of_MIME_types)
+ - text/plain : 기본 텍스트 
+ - text/html : HTML 문서
+ - text/css : CSS 문서
+ - text/xml : XML 문서
+ - image/png : png 이미지
+ - video/mpeg : MPEG 동영상
+ - audio/mp3 : mp3 오디오
+```
+var fs = require('fs');
+var http = require('http');
+
+// HTML
+http.createServer(function(request,response){
+	fs.readFile('HTMLPage.html',function(err,data){
+		response.writeHead(200,{'Content-Type':'text/html'});
+		response.end(data);
+	});
+}).listen(52273, function(){
+	console.log('Server Running!!')
+});
+
+// 이미지
+http.createServer(function(request,response){
+	fs.readFile('HTMLPage.html',function(err,data){
+		response.writeHead(200,{'Content-Type':'image/jpeg'});
+		response.end(data);
+	});
+}).listen(52274, function(){
+	console.log('Server Running!!')
+});
+
+// 음악
+http.createServer(function(request,response){
+	fs.readFile('HTMLPage.html',function(err,data){
+		response.writeHead(200,{'Content-Type':'audio/mp3'});
+		response.end(data);
+	});
+}).listen(52275, function(){
+	console.log('Server Running!!')
+});
 ```
 
 
