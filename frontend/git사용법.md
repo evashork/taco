@@ -1,6 +1,7 @@
 # git
 
-
+### git 사이트
+- [git](https://git-scm.com/book/ko/v2)
 
 ### git 기본사용패턴
 
@@ -82,5 +83,11 @@ git merge beta						# 브런치 합치기
 git push							# 원격저장소 동기화
 ```
 
+### git 에러
+#### push가 안될 떄
+원격저장소 연결 전 원격저장소에 파일이 있는 경우 동기화가 안되어서 push 가 안됨
 
-
+```
+git check out master
+git push origin +HEAD
+```
