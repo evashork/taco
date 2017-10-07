@@ -22,6 +22,7 @@ javascript 참고 및 코드 저장소
 
 - [DOM](https://github.com/evashork/taco/blob/master/frontend/javascript/dom.md) - 문서 객체 모델
 
+- [배열 관련 메소드](http://programmingsummaries.tistory.com/357)
 
 
 ## Debug
