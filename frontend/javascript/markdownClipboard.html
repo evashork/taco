@@ -1,0 +1,10 @@
+var MD = "* [" + document.title + "]";
+MD += "(" + document.location.href + ") - ";
+
+var textArea = document.createElement("textarea");
+textArea.value = MD;
+document.body.appendChild(textArea);
+textArea.select();
+document.execCommand('copy');
+document.body.removeChild(textArea);
+alert("복사성공");
