@@ -10,8 +10,9 @@
 >컴포넌트 기반
 
 
-- [Angular](https://angular.io/)
-- [Angular CLI](https://cli.angular.io/)
+* [Angular](https://angular.io/)
+* [Angular CLI](https://cli.angular.io/)
+* [인프런](https://www.inflearn.com/course/angular-%EA%B0%95%EC%A2%8C-%EA%B8%B0%EB%B3%B8/) - angular 기본강좌
 
 
 ### 설치
