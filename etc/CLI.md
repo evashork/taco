@@ -1,6 +1,6 @@
-## Unix 기본 명령어
+## CLI 기본 명령어
 
-> 기본적인 Unix 명령어 
+> Command Line Interface 
 
 - [기본 명령어](http://cailisin.tistory.com/entry/리눅스-Linux-유닉스-Unix-주요-기본-명령어)
 - [권한 관리](http://cailisin.tistory.com/entry/유닉스-Unix-리눅스-Linux-권한-관리)
