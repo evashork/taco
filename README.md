@@ -12,8 +12,8 @@
 / [Angular](https://github.com/evashork/taco/tree/master/frontend/angular)
 / [Vue](https://github.com/evashork/taco/tree/master/frontend/vue)
 / [Git](https://github.com/evashork/taco/tree/master/frontend/git사용법.md)
-/ [Bootstrap](https://github.com/evashork/taco/tree/master/frontend/bootstrap사용법.md)
-/ [SASS](https://github.com/evashork/taco/tree/master/frontend/sass사용법.md)
+/ [Bootstrap](https://github.com/evashork/taco/tree/master/frontend/bootstrap.md)
+/ [SASS](https://github.com/evashork/taco/tree/master/frontend/sass.md)
 
 ### Programming Language
 
@@ -23,8 +23,14 @@
 
 ### DataBase
 
-* [MongoDB](https://github.com/evashork/taco/tree/master/database/mongodb사용법.md)
+* [MongoDB](https://github.com/evashork/taco/tree/master/database/mongodb.md)
 / [SQL](https://github.com/evashork/taco/tree/master/database/sql)
+
+### Graphic
+* [MagicaVoxel](https://github.com/evashork/taco/tree/master/etc/magicaVoxel.md)
+/ [Gimp](https://github.com/evashork/taco/tree/master/etc/gimp.md)
+/ [Piskel](https://github.com/evashork/taco/tree/master/etc/piskel.md)
+/ [Blender](https://github.com/evashork/taco/tree/master/etc/blender.md)
 
 ### Etc
 
