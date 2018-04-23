@@ -16,9 +16,9 @@
 / [SASS](https://github.com/evashork/taco/tree/master/frontend/sass.md)
 
 ### GAME DEV
-* [Unity](https://github.com/evashork/taco/tree/game/unity.md)
-/ [MagicVoxel](https://github.com/evashork/taco/tree/game/unity.md)
-/ [Blender](https://github.com/evashork/taco/tree/game/blender.md)
+* [Unity](https://github.com/evashork/taco/tree/master/game/unity.md)
+/ [MagicVoxel](https://github.com/evashork/taco/tree/master/game/unity.md)
+/ [Blender](https://github.com/evashork/taco/tree/master/game/blender.md)
 
 ### Programming Language
 
