@@ -7,8 +7,8 @@
 - [C#]()
 
 ### 조작
-- [Input](https://github.com/evashork/Unity/blob/master/KeyInput.cs)
-/ [Touch]()
+- [Input](ttps://github.com/evashork/taco/tree/master/game/example/input.md)
+/ [Touch](http://prosto.tistory.com/96)
 
 ### 이동
 - [기본이동](https://github.com/evashork/Unity/blob/master/move.cs)
