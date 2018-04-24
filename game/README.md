@@ -3,11 +3,11 @@
 > Unity 기본 사용법 
 
 ### 참고사이트
-- [Unity](https://unity3d.com/kr/) 공식사이트
-- [C#]()
+- [Unity](https://unity3d.com/kr/)
+- [C#](http://www.csharpstudy.com/)
 
 ### 조작
-- [Input](ttps://github.com/evashork/taco/tree/master/game/example/input.md)
+- [Input](https://github.com/evashork/taco/tree/master/game/example/input.md)
 / [Touch](http://prosto.tistory.com/96)
 
 ### 이동
@@ -21,7 +21,8 @@
 / [회전하기](https://github.com/evashork/Unity/blob/master/spin.cs)
 / [회전운동](https://github.com/evashork/Unity/blob/master/회전운동하기.cs)
 / [방향전환](https://github.com/evashork/Unity/blob/master/방향전환하기.cs)
-/ [따라다니기](https://github.com/evashork/Unity/blob/master/플레이어따라다니기.cs)
+- [따라다니기](https://github.com/evashork/Unity/blob/master/플레이어따라다니기.cs)
+
 
 ### 충돌
 - [OnCollision](https://github.com/evashork/Unity/blob/master/col.cs)
