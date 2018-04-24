@@ -7,8 +7,11 @@
 - [C#](http://www.csharpstudy.com/)
 
 ### 조작
-- [Input](https://github.com/evashork/taco/tree/master/game/example/input.md)
+- [Input](https://docs.unity3d.com/kr/530/ScriptReference/Input.html)
 / [Touch](http://prosto.tistory.com/96)
+- [방향키](https://github.com/evashork/taco/tree/master/game/example/input1.cs)
+/ [터치이벤트](https://github.com/evashork/taco/tree/master/game/example/input2.cs)
+/ [터치&슬라이드](https://github.com/evashork/taco/tree/master/game/example/input3.cs)
 
 ### 이동
 - [기본이동](https://github.com/evashork/Unity/blob/master/move.cs)
