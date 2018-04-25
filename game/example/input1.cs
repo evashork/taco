@@ -1,3 +1,5 @@
+	
+
 	if( Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
 	{ 
 		transform.Translate (0, 0, speed * Time.deltaTime);
@@ -6,3 +8,5 @@
 	{
 		transform.Translate (speed * Time.deltaTime, 0 , 0);
 	}
+
+	

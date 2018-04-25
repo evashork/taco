@@ -12,44 +12,45 @@
 - [방향키](https://github.com/evashork/taco/tree/master/game/example/input1.cs)
 / [터치이벤트](https://github.com/evashork/taco/tree/master/game/example/input2.cs)
 / [터치&슬라이드](https://github.com/evashork/taco/tree/master/game/example/input3.cs)
+/ [MFI](https://github.com/evashork/taco/tree/master/game/example/input4.cs)
 
 ### 이동
-- [기본이동](https://github.com/evashork/Unity/blob/master/move.cs)
-/ [AddForce]()
-/ [RigidBody]()
-/ [반복움직임](https://github.com/evashork/Unity/blob/master/반복움직임.cs)
-/ [지정위치로이동](https://github.com/evashork/Unity/blob/master/지정한위치로이동.cs)
-/ [가속도이동](https://github.com/evashork/Unity/blob/master/가속도이동하기.cs)
-/ [그리드이동](https://github.com/evashork/Unity/blob/master/그리드이동하기.cs)
-/ [회전하기](https://github.com/evashork/Unity/blob/master/spin.cs)
-/ [회전운동](https://github.com/evashork/Unity/blob/master/회전운동하기.cs)
-/ [방향전환](https://github.com/evashork/Unity/blob/master/방향전환하기.cs)
-- [따라다니기](https://github.com/evashork/Unity/blob/master/플레이어따라다니기.cs)
+- [기본이동](https://github.com/evashork/taco/tree/master/game/example/move1.cs)
+/ [점프](https://github.com/evashork/taco/tree/master/game/example/move2.cs)
+/ [반복움직임](https://github.com/evashork/taco/tree/master/game/example/move3.cs)
+/ [회전하기](https://github.com/evashork/taco/tree/master/game/example/move7.cs)
+/ [방향전환](https://github.com/evashork/taco/tree/master/game/example/move8.cs)
 
+- [회전운동](https://github.com/evashork/taco/tree/master/game/example/move4.cs)
+/ [지정위치로이동](https://github.com/evashork/taco/tree/master/game/example/move5.cs)
+/ [가속도이동](https://github.com/evashork/taco/tree/master/game/example/move6.cs)
+/ [그리드이동](https://github.com/evashork/Unity/blob/master/그리드이동하기.cs)
+/ [따라다니기](https://github.com/evashork/taco/tree/master/game/example/move9.cs)
 
 ### 충돌
-- [OnCollision](https://github.com/evashork/Unity/blob/master/col.cs)
-/ [OnTrigger](https://github.com/evashork/Unity/blob/master/trigger.cs)
-/ [Raycast]()
-/ [밟으면움직이는발판](https://github.com/evashork/Unity/blob/master/밟으면움직이는발판.cs)
+- [Collision](https://github.com/evashork/taco/tree/master/game/example/col1.cs)
+/ [Trigger](https://github.com/evashork/taco/tree/master/game/example/col2.cs)
+/ [Raycast](https://github.com/evashork/taco/tree/master/game/example/col3.cs)
+/ [밟으면움직이는발판](https://github.com/evashork/taco/tree/master/game/example/col4.cs)
+
+### 효과
+- [페이드](https://github.com/evashork/taco/tree/master/game/example/)
+/ [색상변경](https://github.com/evashork/taco/tree/master/game/example/)
+/ [팝업](https://github.com/evashork/taco/tree/master/game/example/)
 
 ### ETC
-- [Coroutine](https://github.com/evashork/Unity/blob/master/courutin.cs)
-/ [SendMessage](https://github.com/evashork/Unity/blob/master/sendmessage사용법.cs)
-/ [SceneManager](https://github.com/evashork/Unity/blob/master/씬이동하기.cs)
+- [Coroutine](https://github.com/evashork/taco/tree/master/game/example/etc1.cs)
+/ [SendMessage](https://github.com/evashork/taco/tree/master/game/example/etc2.cs)
+/ [SceneManager](https://github.com/evashork/taco/tree/master/game/example/etc3.cs)
+/ [PlayerPref](https://github.com/evashork/taco/tree/master/game/example/etc4.cs)
 
-### 접근
-- [GetComponent](https://github.com/evashork/Unity/blob/master/compent.cs)
-/ [자식오브젝트접근](https://github.com/evashork/Unity/blob/master/자식오브젝트찾기.cs)
+### 오브젝트
+- [Component](https://github.com/evashork/taco/tree/master/game/example/com1.cs)
+/ [오브젝트찾기](https://github.com/evashork/taco/tree/master/game/example/com2.cs)
+/ [자식찾기](https://github.com/evashork/taco/tree/master/game/example/com3.cs)
+/ [부모설정](https://github.com/evashork/taco/tree/master/game/example/com4.cs)
+/ [생성과삭제](https://github.com/evashork/taco/tree/master/game/example/com5.cs)
+/ [특정자식활성화](https://github.com/evashork/taco/tree/master/game/example/com6.cs)
 
-### 관계
-- [부모설정](https://github.com/evashork/Unity/blob/master/부모로설정하기.cs)
-/ []()
 
-### 저장
-- []()
-/ []()
 
-### 복제
-- [Instantiate]()
-/ [Destroy](https://github.com/evashork/Unity/blob/master/destory.cs)

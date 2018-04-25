@@ -1,3 +1,5 @@
+	
+
 	// touch 이벤트 처리
 	if (Input.GetMouseButtonDown (0)) 	
 	{
@@ -44,3 +46,5 @@
 		_dy = 0;
 		StartPosition = Vector3.zero;
 	}
+
+	
