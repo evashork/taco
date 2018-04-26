@@ -39,9 +39,10 @@
 
 
 ### 효과
-- [페이드](https://github.com/evashork/taco/tree/master/game/example/)
-/ [색상변경](https://github.com/evashork/taco/tree/master/game/example/)
-/ [팝업](https://github.com/evashork/taco/tree/master/game/example/)
+- [페이드](https://github.com/evashork/taco/tree/master/game/example/eff1.cs)
+/ [색상변경](https://github.com/evashork/taco/tree/master/game/example/eff2.cs)
+/ [팝업](https://github.com/evashork/taco/tree/master/game/example/eff3.cs)
+/ [발사](https://github.com/evashork/taco/tree/master/game/example/eff4.cs)
 
 
 ### ETC
