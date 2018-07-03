@@ -50,6 +50,7 @@
 / [SendMessage](https://github.com/evashork/taco/tree/master/game/example/etc2.cs)
 / [SceneManager](https://github.com/evashork/taco/tree/master/game/example/etc3.cs)
 / [PlayerPref](https://github.com/evashork/taco/tree/master/game/example/etc4.cs)
+/ [Vector](https://github.com/evashork/taco/tree/master/game/example/etc5.cs)
 
 
 ### 오브젝트
@@ -60,5 +61,26 @@
 / [생성과삭제](https://github.com/evashork/taco/tree/master/game/example/com5.cs)
 / [특정자식활성화](https://github.com/evashork/taco/tree/master/game/example/com6.cs)
 
+### Mobile
 
+- [Share](https://github.com/evashork/taco/tree/master/game/example/mobile1.md) 
+  / [Unity IAP](https://github.com/evashork/taco/tree/master/game/example/mobile2.md)
+  / [GameCenter](https://github.com/evashork/taco/tree/master/game/example/mobile3.md)
+  / [PlayStore](https://github.com/evashork/taco/tree/master/game/example/mobile4.md)
+
+### iOS
+
+- [iOS빌드](https://github.com/evashork/taco/tree/master/game/example/ios.md)
+
+  / [개발자등록방법](https://github.com/evashork/taco/tree/master/game/example/ios2.md)
+
+  / [앱등록하기](http://itdevelop.kr/79)
+
+  
+
+### Android
+
+- [Android빌드](https://github.com/evashork/taco/tree/master/game/example/android.md)
+
+  
 
