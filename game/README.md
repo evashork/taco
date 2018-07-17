@@ -70,11 +70,7 @@
 
 ### iOS
 
-- [iOS빌드](https://github.com/evashork/taco/tree/master/game/example/ios.md)
-
-  / [개발자등록방법](https://github.com/evashork/taco/tree/master/game/example/ios2.md)
-
-  / [앱등록하기](http://itdevelop.kr/79)
+- [iOS빌드](https://github.com/evashork/taco/tree/master/game/example/ios.md)/ [개발자등록방법](https://github.com/evashork/taco/tree/master/game/example/ios2.md)/ [앱등록하기](http://itdevelop.kr/79)
 
   
 

@@ -2,6 +2,8 @@
 
 ### git 사이트
 - [git](https://git-scm.com/book/ko/v2)
+- [cheatsheet](https://rogerdudler.github.io/git-guide/files/git_cheat_sheet.pdf)
+- [github를 웹호스팅으로 이용하기 - 생활코딩](https://opentutorials.org/course/2473/16117)
 
 ### git 기본사용패턴
 
